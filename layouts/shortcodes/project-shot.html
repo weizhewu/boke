@@ -1,0 +1,12 @@
+<div class="project-shot-card">
+  <h3>{{ .Get "title" }}</h3>
+  <p>{{ .Get "desc" }}</p>
+  <figure class="project-shot">
+    <img
+      src="{{ (.Get "src") | relURL }}"
+      alt="{{ .Get "title" }}"
+      loading="lazy"
+      decoding="async"
+      class="project-shot__img">
+  </figure>
+</div>

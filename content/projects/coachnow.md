@@ -32,65 +32,29 @@ weight: 1
 
 ## 界面预览
 
-### 启动与登录
+{{< project-gallery >}}
 
-品牌落地页，区分学员 / 教练能力，支持手机号注册与微信一键登录。
+{{< project-shot title="启动与登录" desc="品牌落地页，区分学员 / 教练能力，支持手机号注册与微信一键登录。" src="projects/coachnow/welcome.webp" >}}
 
-![启动页](projects/coachnow/welcome.webp)
+{{< project-shot title="课程详情 · 购课" desc="学员端查看课程说明、选择节数套餐，一键购买课包并进入支付流程。" src="projects/coachnow/course-detail.webp" >}}
 
-### 课程详情 · 购课
+{{< project-shot title="教练工作台" desc="今日待上课、活跃学员 KPI，扫码下课、排课与学员管理入口。" src="projects/coachnow/coach-workbench.webp" >}}
 
-学员端查看课程说明、选择节数套餐，一键购买课包并进入支付流程。
+{{< project-shot title="排课计划" desc="按日期查看预约与上课状态，支持「已预约 / 上课中 / 已完成」全流程。" src="projects/coachnow/schedule-plan.webp" >}}
 
-![课程详情](projects/coachnow/course-detail.webp)
+{{< project-shot title="上课码核销" desc="排课详情支持输入上课码确认到课，课程状态从「上课中」流转至完课。" src="projects/coachnow/class-code.webp" >}}
 
-### 教练工作台
+{{< project-shot title="我的时段" desc="配置学员可预约时段、容量与时长，实时展示可预约 / 已占用状态。" src="projects/coachnow/time-slots.webp" >}}
 
-今日待上课、活跃学员 KPI，扫码下课、排课与学员管理入口。
+{{< project-shot title="为学员安排上课" desc="教练可为已购课包学员手动指定时段，查看剩余课时并一键排入可预约档期。" src="projects/coachnow/assign-student.webp" >}}
 
-![教练工作台](projects/coachnow/coach-workbench.webp)
+{{< project-shot title="广场动态" desc="教练与学员发布训练动态，支持同城浏览、点赞与互动。" src="projects/coachnow/square.webp" >}}
 
-### 排课计划
+{{< project-shot title="我的学员" desc="查看课包余量、预约与完课记录，支持发消息、安排上课。" src="projects/coachnow/students.webp" >}}
 
-按日期查看预约与上课状态，支持「已预约 / 上课中 / 已完成」全流程。
+{{< project-shot title="即时通讯" desc="教练与学员一对一私信，支持 WebSocket 实时消息与历史记录。" src="projects/coachnow/im-chat.webp" >}}
 
-![排课计划](projects/coachnow/schedule-plan.webp)
-
-### 上课码核销
-
-排课详情支持输入上课码确认到课，课程状态从「上课中」流转至完课。
-
-![上课码核销](projects/coachnow/class-code.webp)
-
-### 我的时段
-
-配置学员可预约时段、容量与时长，实时展示可预约 / 已占用状态。
-
-![我的时段](projects/coachnow/time-slots.webp)
-
-### 为学员安排上课
-
-教练可为已购课包学员手动指定时段，查看剩余课时并一键排入可预约档期。
-
-![安排学员上课](projects/coachnow/assign-student.webp)
-
-### 广场动态
-
-教练与学员发布训练动态，支持同城浏览、点赞与互动。
-
-![广场动态](projects/coachnow/square.webp)
-
-### 我的学员
-
-查看课包余量、预约与完课记录，支持发消息、安排上课。
-
-![我的学员](projects/coachnow/students.webp)
-
-### 即时通讯
-
-教练与学员一对一私信，支持 WebSocket 实时消息与历史记录。
-
-![即时通讯](projects/coachnow/im-chat.webp)
+{{< /project-gallery >}}
 
 ## 技术栈
 
