@@ -5,7 +5,7 @@ draft: false
 summary: "健身私教预约平台 · 连接教练与学员的全栈微服务项目"
 cover:
   image: projects/coachnow/cover-thumb.webp
-  alt: CoachNow 启动页
+  alt: CoachNow 管理后台运营总览
 tags:
   - Java
   - Spring Cloud
