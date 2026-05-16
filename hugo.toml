@@ -69,5 +69,8 @@ enableEmoji = true
     url = "/search/"
     weight = 30
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [markup.highlight]
   noClasses = false

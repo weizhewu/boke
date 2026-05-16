@@ -197,8 +197,9 @@ header .nav {
 
 .project-card-cover {
   aspect-ratio: 16 / 10;
+  max-height: 200px;
   overflow: hidden;
-  background: var(--code-bg);
+  background: linear-gradient(180deg, #eef4fb 0%, #f7fbff 100%);
 }
 
 .project-card-cover img {
@@ -303,17 +304,82 @@ header .nav {
   margin-top: 0.75rem;
 }
 
-.project-detail-content img {
-  width: 100%;
-  max-width: 720px;
-  margin: 1.25rem auto;
-  display: block;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+/* 界面预览 · 双列截图画廊 */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.75rem;
+  margin: 2rem 0 2.5rem;
 }
 
-.project-detail-content h3 {
+.project-shot-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-shot-item h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--primary);
+  width: 100%;
+}
+
+.project-shot-item > p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin: 0 0 1rem;
+  max-width: 320px;
+}
+
+.project-shot {
+  margin: 0;
+  width: 100%;
+  max-width: 280px;
+}
+
+.project-shot__frame {
+  background: linear-gradient(180deg, #e8eef5 0%, #f4f8fc 100%);
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 32px rgba(15, 40, 80, 0.1);
+}
+
+.project-shot__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 390 / 844;
+  object-fit: contain;
+  object-position: top center;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.project-shot__caption {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--tertiary);
+  text-align: center;
+}
+
+.project-detail-content > h2 {
+  margin-top: 2.5rem;
+}
+
+.project-detail-content img:not(.project-shot__img) {
+  width: 100%;
+  max-width: 280px;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.project-detail-content h3:not(.project-shot-item h3) {
   font-size: 1.1rem;
   font-weight: 700;
   margin-top: 2rem;
@@ -360,5 +426,18 @@ header .nav {
 
   .project-detail-header h1 {
     font-size: 1.75rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project-shot {
+    max-width: 260px;
+  }
+
+  .project-card-cover {
+    max-height: 180px;
   }
 }

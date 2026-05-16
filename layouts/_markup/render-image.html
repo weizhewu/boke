@@ -1,7 +1,8 @@
 {{- $u := urls.Parse .Destination -}}
 {{- $src := $u.String -}}
+{{- $path := "" -}}
 {{- if not $u.IsAbs -}}
-  {{- $path := strings.TrimPrefix "./" $u.Path }}
+  {{- $path = strings.TrimPrefix "./" $u.Path }}
   {{- $path = strings.TrimPrefix "/" $path }}
   {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
     {{- $src = .RelPermalink -}}
@@ -18,6 +19,24 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- $isProjectShot := and .Page (eq .Page.Section "projects") (strings.Contains $path "projects/coachnow/") -}}
+{{- if $isProjectShot -}}
+<figure class="project-shot">
+  <div class="project-shot__frame">
+    <img
+      src="{{ $src }}"
+      alt="{{ .Text }}"
+      width="390"
+      height="844"
+      loading="lazy"
+      decoding="async"
+      class="project-shot__img">
+  </div>
+  {{- with .Text -}}
+  <figcaption class="project-shot__caption">{{ . }}</figcaption>
+  {{- end -}}
+</figure>
+{{- else -}}
 {{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
 <img
   {{- range $k, $v := $attributes -}}
@@ -25,3 +44,4 @@
       {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
     {{- end -}}
   {{- end -}}>
+{{- end -}}
