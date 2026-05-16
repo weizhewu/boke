@@ -38,6 +38,12 @@ weight: 1
 
 ![启动页](projects/coachnow/welcome.webp)
 
+### 课程详情 · 购课
+
+学员端查看课程说明、选择节数套餐，一键购买课包并进入支付流程。
+
+![课程详情](projects/coachnow/course-detail.webp)
+
 ### 教练工作台
 
 今日待上课、活跃学员 KPI，扫码下课、排课、学员与课程管理入口。
