@@ -1,0 +1,74 @@
+baseURL = "https://weizhewu.github.io/boke/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "位哲武的博客"
+theme = "PaperMod"
+pagination.pagerSize = 10
+enableRobotsTXT = true
+enableEmoji = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  description = "Java 开发工程师 · 技术笔记与个人记录"
+  author = "位哲武"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  disableSpecial1stPost = false
+  showtoc = true
+
+  [params.profileMode]
+    enabled = true
+    title = "位哲武"
+    subtitle = "Java 开发工程师 · 3 年经验 · 南京"
+    imageUrl = "avatar.svg"
+    imageTitle = "头像"
+    buttons = [
+      { name = "关于我", url = "about" },
+      { name = "文章", url = "posts" },
+    ]
+
+  [params.label]
+    text = "位哲武的博客"
+    icon = "avatar.svg"
+    iconHeight = 35
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/weizhewu"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:2316860587@qq.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
+
+[markup.highlight]
+  noClasses = false
