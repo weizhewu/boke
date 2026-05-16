@@ -1,7 +1,7 @@
 baseURL = "https://weizhewu.github.io/boke/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "位哲武的博客"
+title = "Wei's Blog"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -12,33 +12,37 @@ enableEmoji = true
 
 [params]
   env = "production"
-  description = "Java 开发工程师 · 技术笔记与个人记录"
-  author = "位哲武"
+  description = "后端工程师 · 技术笔记与思考"
+  author = "Wei"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
-  ShowRssButtonInSectionTermList = true
-  disableSpecial1stPost = false
+  ShowRssButtonInSectionTermList = false
+  disableSpecial1stPost = true
   showtoc = true
 
   [params.profileMode]
     enabled = true
-    title = "位哲武"
-    subtitle = "Java 开发工程师 · 3 年经验 · 南京"
+    title = "Wei"
+    subtitle = "Backend Engineer · 记录技术与生活"
     imageUrl = "avatar.svg"
-    imageTitle = "头像"
+    imageTitle = "avatar"
     buttons = [
-      { name = "关于我", url = "about" },
-      { name = "文章", url = "posts" },
+      { name = "博客", url = "posts" },
+      { name = "关于", url = "about" },
     ]
 
   [params.label]
-    text = "位哲武的博客"
+    text = "Wei's Blog"
     icon = "avatar.svg"
     iconHeight = 35
+
+  [params.cover]
+    hiddenInList = true
+    hiddenInSingle = true
 
 [[params.socialIcons]]
   name = "github"
@@ -46,29 +50,24 @@ enableEmoji = true
 
 [[params.socialIcons]]
   name = "email"
-  url = "mailto:2316860587@qq.com"
+  url = "mailto:weizhewu232623@gmail.com"
 
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "文章"
+    name = "博客"
     url = "/posts/"
     weight = 10
-  [[menu.main]]
-    identifier = "archives"
-    name = "归档"
-    url = "/archives/"
-    weight = 20
   [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
-    weight = 30
+    weight = 20
   [[menu.main]]
     identifier = "search"
     name = "搜索"
     url = "/search/"
-    weight = 40
+    weight = 30
 
 [markup.highlight]
   noClasses = false
