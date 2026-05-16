@@ -50,11 +50,23 @@ weight: 1
 
 ![排课计划](projects/coachnow/schedule-plan.webp)
 
+### 上课码核销
+
+排课详情支持输入上课码确认到课，课程状态从「上课中」流转至完课。
+
+![上课码核销](projects/coachnow/class-code.webp)
+
 ### 我的时段
 
 配置学员可预约时段、容量与时长，实时展示可预约 / 已占用状态。
 
 ![我的时段](projects/coachnow/time-slots.webp)
+
+### 为学员安排上课
+
+教练可为已购课包学员手动指定时段，查看剩余课时并一键排入可预约档期。
+
+![安排学员上课](projects/coachnow/assign-student.webp)
 
 ### 广场动态
 
@@ -67,6 +79,12 @@ weight: 1
 查看课包余量、预约与完课记录，支持发消息、安排上课。
 
 ![我的学员](projects/coachnow/students.webp)
+
+### 即时通讯
+
+教练与学员一对一私信，支持 WebSocket 实时消息与历史记录。
+
+![即时通讯](projects/coachnow/im-chat.webp)
 
 ## 技术栈
 
