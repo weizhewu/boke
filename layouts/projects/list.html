@@ -1,0 +1,47 @@
+{{- define "main" }}
+<header class="page-header projects-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.summary }}
+  <p class="projects-intro">{{ . }}</p>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content md-content projects-intro-body">
+  {{ .Content }}
+</div>
+{{- end }}
+
+<div class="projects-grid">
+  {{- range .Pages.ByWeight }}
+  <article class="project-card">
+    <a class="project-card-link" href="{{ .RelPermalink }}">
+      {{- $cover := (.Param "cover.image") | default (.Param "cover") }}
+      {{- if $cover }}
+      <div class="project-card-cover">
+        <img src="{{ $cover | relURL }}" alt="{{ .Title }}" loading="lazy" />
+      </div>
+      {{- end }}
+      <div class="project-card-body">
+        <div class="project-card-meta">
+          {{- with .Params.status }}<span class="project-badge">{{ . }}</span>{{- end }}
+          {{- with .Params.role }}<span class="project-role">{{ . }}</span>{{- end }}
+        </div>
+        <h2 class="project-card-title">{{ .Title }}</h2>
+        {{- with .Params.summary }}
+        <p class="project-card-summary">{{ . }}</p>
+        {{- end }}
+        {{- with .Params.tags }}
+        <div class="project-tags">
+          {{- range first 5 . }}
+          <span class="project-tag">{{ . }}</span>
+          {{- end }}
+        </div>
+        {{- end }}
+        <span class="project-card-cta">查看详情 →</span>
+      </div>
+    </a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}

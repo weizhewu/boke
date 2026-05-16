@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="375" height="812">
+  <defs>
+    <linearGradient id="headerBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="phoneClip">
+      <rect x="0" y="0" width="375" height="812" rx="40"/>
+    </clipPath>
+  </defs>
+
+  <!-- Phone Frame -->
+  <rect width="375" height="812" rx="40" fill="#f8fafc" clip-path="url(#phoneClip)"/>
+
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="375" height="44" fill="url(#headerBg)"/>
+  <text x="187" y="30" text-anchor="middle" fill="white" font-family="system-ui" font-size="14" font-weight="600">9:41</text>
+  <circle cx="320" cy="24" r="6" fill="none" stroke="white" stroke-width="1.5"/>
+  <rect x="330" y="19" width="22" height="10" rx="2" fill="none" stroke="white" stroke-width="1.2"/>
+  <rect x="332" y="21" width="14" height="6" rx="1" fill="white"/>
+
+  <!-- Header -->
+  <rect x="0" y="44" width="375" height="120" fill="url(#headerBg)"/>
+  <text x="24" y="82" fill="white" font-family="system-ui" font-size="24" font-weight="700">CoachNow</text>
+  <text x="24" y="106" fill="rgba(255,255,255,0.8)" font-family="system-ui" font-size="14">找到对的教练，约到对的课</text>
+
+  <!-- Search Bar -->
+  <rect x="24" y="124" width="327" height="40" rx="20" fill="rgba(255,255,255,0.2)"/>
+  <text x="56" y="149" fill="rgba(255,255,255,0.7)" font-family="system-ui" font-size="14">搜索教练、课程...</text>
+  <circle cx="44" cy="144" r="8" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+  <line x1="50" y1="150" x2="54" y2="154" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+
+  <!-- Category Pills -->
+  <rect x="24" y="184" width="64" height="32" rx="16" fill="#667eea"/>
+  <text x="56" y="205" text-anchor="middle" fill="white" font-family="system-ui" font-size="12" font-weight="500">全部</text>
+  <rect x="96" y="184" width="64" height="32" rx="16" fill="#f1f5f9"/>
+  <text x="128" y="205" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="12">私教</text>
+  <rect x="168" y="184" width="64" height="32" rx="16" fill="#f1f5f9"/>
+  <text x="200" y="205" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="12">瑜伽</text>
+  <rect x="240" y="184" width="64" height="32" rx="16" fill="#f1f5f9"/>
+  <text x="272" y="205" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="12">康复</text>
+  <rect x="312" y="184" width="56" height="32" rx="16" fill="#f1f5f9"/>
+  <text x="340" y="205" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="12">拳击</text>
+
+  <!-- Section Title -->
+  <text x="24" y="248" fill="#1e293b" font-family="system-ui" font-size="18" font-weight="700">附近教练</text>
+  <text x="311" y="248" fill="#667eea" font-family="system-ui" font-size="13">查看全部 ›</text>
+
+  <!-- Coach Card 1 -->
+  <rect x="24" y="264" width="327" height="110" rx="16" fill="white" filter="url(#shadow)"/>
+  <circle cx="72" cy="319" r="32" fill="#e0e7ff"/>
+  <text x="72" y="326" text-anchor="middle" fill="#667eea" font-family="system-ui" font-size="22" font-weight="600">李</text>
+  <text x="120" y="296" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">李教练</text>
+  <text x="178" y="296" fill="#f59e0b" font-family="system-ui" font-size="12">★ 4.9</text>
+  <text x="120" y="316" fill="#64748b" font-family="system-ui" font-size="12">力量训练 · 体态矫正 · 5年经验</text>
+  <text x="120" y="338" fill="#94a3b8" font-family="system-ui" font-size="11">距你 1.2km · 已服务 328 人</text>
+  <rect x="260" y="340" width="72" height="28" rx="14" fill="#667eea"/>
+  <text x="296" y="358" text-anchor="middle" fill="white" font-family="system-ui" font-size="12" font-weight="500">预约</text>
+
+  <!-- Coach Card 2 -->
+  <rect x="24" y="390" width="327" height="110" rx="16" fill="white" filter="url(#shadow)"/>
+  <circle cx="72" cy="445" r="32" fill="#fce7f3"/>
+  <text x="72" y="452" text-anchor="middle" fill="#ec4899" font-family="system-ui" font-size="22" font-weight="600">王</text>
+  <text x="120" y="422" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">王教练</text>
+  <text x="178" y="422" fill="#f59e0b" font-family="system-ui" font-size="12">★ 4.8</text>
+  <text x="120" y="442" fill="#64748b" font-family="system-ui" font-size="12">瑜伽 · 普拉提 · 3年经验</text>
+  <text x="120" y="464" fill="#94a3b8" font-family="system-ui" font-size="11">距你 2.8km · 已服务 215 人</text>
+  <rect x="260" y="466" width="72" height="28" rx="14" fill="#667eea"/>
+  <text x="296" y="484" text-anchor="middle" fill="white" font-family="system-ui" font-size="12" font-weight="500">预约</text>
+
+  <!-- Coach Card 3 -->
+  <rect x="24" y="516" width="327" height="110" rx="16" fill="white" filter="url(#shadow)"/>
+  <circle cx="72" cy="571" r="32" fill="#d1fae5"/>
+  <text x="72" y="578" text-anchor="middle" fill="#10b981" font-family="system-ui" font-size="22" font-weight="600">张</text>
+  <text x="120" y="548" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">张教练</text>
+  <text x="178" y="548" fill="#f59e0b" font-family="system-ui" font-size="12">★ 4.7</text>
+  <text x="120" y="568" fill="#64748b" font-family="system-ui" font-size="12">CrossFit · 减脂 · 7年经验</text>
+  <text x="120" y="590" fill="#94a3b8" font-family="system-ui" font-size="11">距你 3.5km · 已服务 502 人</text>
+  <rect x="260" y="592" width="72" height="28" rx="14" fill="#667eea"/>
+  <text x="296" y="610" text-anchor="middle" fill="white" font-family="system-ui" font-size="12" font-weight="500">预约</text>
+
+  <!-- Bottom Tab Bar -->
+  <rect x="0" y="742" width="375" height="70" fill="white"/>
+  <line x1="0" y1="742" x2="375" y2="742" stroke="#e2e8f0" stroke-width="0.5"/>
+
+  <!-- Tab: Home -->
+  <rect x="28" y="752" width="20" height="16" rx="2" fill="#667eea"/>
+  <rect x="32" y="756" width="12" height="3" rx="1" fill="white"/>
+  <rect x="32" y="761" width="8" height="3" rx="1" fill="white"/>
+  <text x="38" y="785" text-anchor="middle" fill="#667eea" font-family="system-ui" font-size="10" font-weight="600">首页</text>
+
+  <!-- Tab: Square -->
+  <circle cx="131" cy="760" r="9" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="131" cy="760" r="3" fill="#94a3b8"/>
+  <text x="131" y="785" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="10">广场</text>
+
+  <!-- Tab: Messages -->
+  <rect x="219" y="752" width="18" height="14" rx="3" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="221" y1="758" x2="235" y2="758" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="221" y1="762" x2="230" y2="762" stroke="#94a3b8" stroke-width="1"/>
+  <text x="228" y="785" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="10">消息</text>
+
+  <!-- Tab: Me -->
+  <circle cx="326" cy="756" r="6" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M318 770 C318 764, 334 764, 334 770" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="326" y="785" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="10">我的</text>
+</svg>

@@ -1,0 +1,26 @@
+{{- define "main" }}
+<article class="project-detail">
+  <header class="project-detail-header">
+    <a class="project-back" href="{{ `/projects/` | relURL }}">← 返回项目列表</a>
+    <div class="project-detail-meta">
+      {{- with .Params.status }}<span class="project-badge">{{ . }}</span>{{- end }}
+      {{- with .Params.role }}<span class="project-role">{{ . }}</span>{{- end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.summary }}
+    <p class="project-detail-summary">{{ . }}</p>
+    {{- end }}
+    {{- with .Params.tags }}
+    <div class="project-tags">
+      {{- range . }}<span class="project-tag">{{ . }}</span>{{- end }}
+    </div>
+    {{- end }}
+  </header>
+
+  <div class="post-content md-content project-detail-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+</article>
+{{- end }}

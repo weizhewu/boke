@@ -31,7 +31,7 @@ enableEmoji = true
     imageUrl = "avatar.svg"
     imageTitle = "avatar"
     buttons = [
-      { name = "博客", url = "posts" },
+      { name = "项目", url = "projects" },
       { name = "关于", url = "about" },
     ]
 
@@ -54,9 +54,9 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "博客"
-    url = "/posts/"
+    identifier = "projects"
+    name = "项目"
+    url = "/projects/"
     weight = 10
   [[menu.main]]
     identifier = "about"
