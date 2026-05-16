@@ -1,7 +1,7 @@
 {{- define "main" }}
 <article class="project-detail">
   <header class="project-detail-header">
-    <a class="project-back" href="{{ `/projects/` | relURL }}">← 返回项目列表</a>
+    <a class="project-back" href="{{ "projects/" | relURL }}">← 返回项目列表</a>
     <div class="project-detail-meta">
       {{- with .Params.status }}<span class="project-badge">{{ . }}</span>{{- end }}
       {{- with .Params.role }}<span class="project-role">{{ . }}</span>{{- end }}
