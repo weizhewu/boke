@@ -4,7 +4,7 @@ date: 2025-03-01
 draft: false
 summary: "健身私教预约平台 · 连接教练与学员的全栈微服务项目"
 cover:
-  image: /projects/coachnow/student-home.webp
+  image: projects/coachnow/student-home.webp
   alt: CoachNow 学员首页
 tags:
   - Java
@@ -36,25 +36,25 @@ weight: 1
 
 找教练、排课、课包与推荐教练一览，支持购课与预约闭环。
 
-![学员首页](/projects/coachnow/student-home.webp)
+![学员首页](projects/coachnow/student-home.webp)
 
 ### 教练端 · 工作台
 
 今日课程 KPI、扫码下课、排课与学员管理入口。
 
-![教练工作台](/projects/coachnow/coach-workbench.webp)
+![教练工作台](projects/coachnow/coach-workbench.webp)
 
 ### 购课与预约支付
 
 课包选购、时段预约、微信支付 V3 小程序支付。
 
-![购课预约](/projects/coachnow/booking-pay.webp)
+![购课预约](projects/coachnow/booking-pay.webp)
 
 ### 管理后台 · 运营总览
 
 GMV、用户/教练/预约趋势、最近登录与业务指标可视化。
 
-![管理后台](/projects/coachnow/admin-dashboard.webp)
+![管理后台](projects/coachnow/admin-dashboard.webp)
 
 ## 技术栈
 

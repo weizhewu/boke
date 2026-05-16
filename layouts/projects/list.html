@@ -19,7 +19,7 @@
       {{- $cover := (.Param "cover.image") | default (.Param "cover") }}
       {{- if $cover }}
       <div class="project-card-cover">
-        <img src="{{ $cover | relURL }}" alt="{{ .Title }}" loading="lazy" />
+        <img src="{{ (strings.TrimPrefix "/" $cover) | relURL }}" alt="{{ .Title }}" loading="lazy" />
       </div>
       {{- end }}
       <div class="project-card-body">
