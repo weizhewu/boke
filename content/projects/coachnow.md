@@ -4,8 +4,8 @@ date: 2025-03-01
 draft: false
 summary: "健身私教预约平台 · 连接教练与学员的全栈微服务项目"
 cover:
-  image: projects/coachnow/student-home.webp
-  alt: CoachNow 学员首页
+  image: projects/coachnow/welcome.webp
+  alt: CoachNow 启动页
 tags:
   - Java
   - Spring Cloud
@@ -32,29 +32,41 @@ weight: 1
 
 ## 界面预览
 
-### 学员端 · 首页
+### 启动与登录
 
-找教练、排课、课包与推荐教练一览，支持购课与预约闭环。
+品牌落地页，区分学员 / 教练能力，支持手机号注册与微信一键登录。
 
-![学员首页](projects/coachnow/student-home.webp)
+![启动页](projects/coachnow/welcome.webp)
 
-### 教练端 · 工作台
+### 教练工作台
 
-今日课程 KPI、扫码下课、排课与学员管理入口。
+今日待上课、活跃学员 KPI，扫码下课、排课、学员与课程管理入口。
 
 ![教练工作台](projects/coachnow/coach-workbench.webp)
 
-### 购课与预约支付
+### 排课计划
 
-课包选购、时段预约、微信支付 V3 小程序支付。
+按日期查看预约与上课状态，支持「已预约 / 上课中 / 已完成」全流程。
 
-![购课预约](projects/coachnow/booking-pay.webp)
+![排课计划](projects/coachnow/schedule-plan.webp)
 
-### 管理后台 · 运营总览
+### 我的时段
 
-GMV、用户/教练/预约趋势、最近登录与业务指标可视化。
+配置学员可预约时段、容量与时长，实时展示可预约 / 已占用状态。
 
-![管理后台](projects/coachnow/admin-dashboard.webp)
+![我的时段](projects/coachnow/time-slots.webp)
+
+### 广场动态
+
+教练与学员发布训练动态，支持同城浏览、点赞与互动。
+
+![广场动态](projects/coachnow/square.webp)
+
+### 我的学员
+
+查看课包余量、预约与完课记录，支持发消息、安排上课。
+
+![我的学员](projects/coachnow/students.webp)
 
 ## 技术栈
 
