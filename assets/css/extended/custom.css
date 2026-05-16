@@ -304,11 +304,11 @@ header .nav {
   margin-top: 0.75rem;
 }
 
-/* 界面预览 · 双列截图画廊 */
+/* 界面预览 · 截图画廊（等比缩小） */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem 1.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem 1.25rem;
   margin: 2rem 0 2.5rem;
 }
 
@@ -316,54 +316,44 @@ header .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .project-shot-item h3 {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   color: var(--primary);
   width: 100%;
+  max-width: 200px;
 }
 
 .project-shot-item > p {
-  font-size: 0.88rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.55;
   color: var(--secondary);
-  margin: 0 0 1rem;
-  max-width: 320px;
+  margin: 0 0 0.75rem;
+  max-width: 200px;
 }
 
 .project-shot {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
-  max-width: 280px;
-}
-
-.project-shot__frame {
-  background: linear-gradient(180deg, #e8eef5 0%, #f4f8fc 100%);
-  border-radius: 20px;
-  padding: 10px;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 32px rgba(15, 40, 80, 0.1);
+  max-width: 200px;
 }
 
 .project-shot__img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  object-position: top center;
-  border-radius: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   background: #fff;
 }
 
 .project-shot__caption {
-  margin-top: 0.6rem;
-  font-size: 0.78rem;
-  color: var(--tertiary);
-  text-align: center;
+  display: none;
 }
 
 .project-detail-content > h2 {
@@ -428,12 +418,14 @@ header .nav {
   }
 
   .project-gallery {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
   }
 
-  .project-shot {
-    max-width: 260px;
+  .project-shot,
+  .project-shot-item h3,
+  .project-shot-item > p {
+    max-width: 168px;
   }
 
   .project-card-cover {

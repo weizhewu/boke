@@ -22,18 +22,12 @@
 {{- $isProjectShot := and .Page (eq .Page.Section "projects") (strings.Contains $path "projects/coachnow/") -}}
 {{- if $isProjectShot -}}
 <figure class="project-shot">
-  <div class="project-shot__frame">
-    <img
-      src="{{ $src }}"
-      alt="{{ .Text }}"
-      width="390"
-      loading="lazy"
-      decoding="async"
-      class="project-shot__img">
-  </div>
-  {{- with .Text -}}
-  <figcaption class="project-shot__caption">{{ . }}</figcaption>
-  {{- end -}}
+  <img
+    src="{{ $src }}"
+    alt="{{ .Text }}"
+    loading="lazy"
+    decoding="async"
+    class="project-shot__img">
 </figure>
 {{- else -}}
 {{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
