@@ -305,41 +305,53 @@ header .nav {
 }
 
 /* 界面预览 · 截图画廊（等比缩小） */
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.75rem 1.25rem;
-  margin: 2rem 0 2.5rem;
+.project-detail-content {
+  --shot-width: 200px;
 }
 
-.project-shot-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-
-.project-shot-item h3 {
+.project-detail-content h2:nth-of-type(2) ~ h3 {
   font-size: 0.95rem;
   font-weight: 700;
-  margin: 0 0 0.35rem;
+  margin: 1.75rem 0 0.35rem;
   color: var(--primary);
-  width: 100%;
-  max-width: 200px;
 }
 
-.project-shot-item > p {
+.project-detail-content h2:nth-of-type(2) ~ h3:first-of-type {
+  margin-top: 1rem;
+}
+
+.project-detail-content h2:nth-of-type(2) ~ p {
   font-size: 0.8rem;
   line-height: 1.55;
   color: var(--secondary);
-  margin: 0 0 0.75rem;
-  max-width: 200px;
+  margin: 0 0 0.5rem;
+  max-width: var(--shot-width);
+}
+
+.project-detail-content h2:nth-of-type(2) ~ .project-shot {
+  display: inline-block;
+  vertical-align: top;
+  width: var(--shot-width);
+  margin: 0 1.25rem 1.5rem 0;
+}
+
+.project-detail-content h2:nth-of-type(2) ~ table,
+.project-detail-content h2:nth-of-type(2) ~ ol,
+.project-detail-content h2:nth-of-type(2) ~ ul {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.project-detail-content h2:nth-of-type(2) ~ h2 {
+  clear: both;
+  margin-top: 2.5rem;
 }
 
 .project-shot {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
-  max-width: 200px;
+  max-width: var(--shot-width);
 }
 
 .project-shot__img {
@@ -417,15 +429,12 @@ header .nav {
     font-size: 1.75rem;
   }
 
-  .project-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem 1rem;
+  .project-detail-content {
+    --shot-width: 168px;
   }
 
-  .project-shot,
-  .project-shot-item h3,
-  .project-shot-item > p {
-    max-width: 168px;
+  .project-detail-content h2:nth-of-type(2) ~ .project-shot {
+    margin: 0 0.75rem 1.25rem 0;
   }
 
   .project-card-cover {
