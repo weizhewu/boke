@@ -446,13 +446,14 @@ header .nav {
 
 .project-lightbox__img {
   display: block;
-  max-width: min(96vw, 1200px);
-  max-height: min(85vh, 900px);
   width: auto;
   height: auto;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.45);
+  image-rendering: auto;
 }
 
 .project-lightbox__caption {
