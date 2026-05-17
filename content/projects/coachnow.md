@@ -30,6 +30,10 @@ weight: 1
 | **管理后台** | 运营看板、教练审核、用户/内容/风控、财务与营销活动 |
 | **后端** | 16 个微服务、微信支付 V3、IM、ES 教练搜索、Redis 延时关单 |
 
+## 演示视频
+
+{{< project-video title="约教练" bvid="BV1GoLV6iEgD" >}}
+
 ## 界面预览
 
 {{< project-gallery >}}

@@ -1,0 +1,26 @@
+{{- $bvid := .Get "bvid" -}}
+{{- $url := .Get "url" -}}
+{{- if and (not $bvid) $url -}}
+  {{- $bvid = replaceRE ".*?(BV[a-zA-Z0-9]+).*" "$1" $url -}}
+{{- end -}}
+{{- if not $bvid -}}
+  {{- errorf "project-video: missing bvid or url in %s" .Position -}}
+{{- end -}}
+{{- $title := .Get "title" | default "演示视频" -}}
+{{- $pageUrl := printf "https://www.bilibili.com/video/%s/" $bvid -}}
+<div class="project-video">
+  <div class="project-video__embed">
+    <iframe
+      src="https://player.bilibili.com/player.html?bvid={{ $bvid }}&page=1&high_quality=1&danmaku=0"
+      title="{{ $title }}"
+      scrolling="no"
+      border="0"
+      frameborder="no"
+      framespacing="0"
+      allowfullscreen="true"
+      loading="lazy"></iframe>
+  </div>
+  <p class="project-video__meta">
+    <a href="{{ $pageUrl }}" target="_blank" rel="noopener noreferrer">在 Bilibili 观看：{{ $title }}</a>
+  </p>
+</div>
