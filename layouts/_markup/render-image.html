@@ -19,7 +19,7 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $isProjectShot := and .Page (eq .Page.Section "projects") (or (strings.Contains $path "projects/coachnow/") (strings.Contains $path "projects/tracesystem/")) -}}
+{{- $isProjectShot := and .Page (eq .Page.Section "projects") (or (strings.Contains $path "projects/coachnow/") (strings.Contains $path "projects/tracesystem/") (strings.Contains $path "projects/book-manage/")) -}}
 {{- if $isProjectShot -}}
 <figure class="project-shot">
   <img
