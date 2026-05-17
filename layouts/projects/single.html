@@ -22,5 +22,13 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
+
+  <div id="project-lightbox" class="project-lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="图片预览">
+    <button type="button" class="project-lightbox__close" aria-label="关闭">×</button>
+    <div class="project-lightbox__stage">
+      <img class="project-lightbox__img" alt="">
+    </div>
+    <p class="project-lightbox__caption"></p>
+  </div>
 </article>
 {{- end }}
