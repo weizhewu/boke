@@ -1,12 +1,26 @@
+{{- $src := .Get "src" -}}
+{{- $full := .Get "full" -}}
+{{- if not $full -}}
+  {{- $dir := path.Dir $src -}}
+  {{- $base := path.Base $src -}}
+  {{- $fullCandidate := printf "static/%s/full/%s" $dir $base -}}
+  {{- if fileExists $fullCandidate -}}
+    {{- $full = printf "%s/full/%s" $dir $base -}}
+  {{- else -}}
+    {{- $full = $src -}}
+  {{- end -}}
+{{- end -}}
 <div class="project-shot-card">
   <h3>{{ .Get "title" }}</h3>
   <p>{{ .Get "desc" }}</p>
   <figure class="project-shot">
     <img
-      src="{{ (.Get "src") | relURL }}"
+      src="{{ $src | relURL }}"
+      data-full-src="{{ $full | relURL }}"
       alt="{{ .Get "title" }}"
       loading="lazy"
       decoding="async"
+      sizes="(max-width: 768px) 100vw, (max-width: 1100px) 33vw, 280px"
       class="project-shot__img">
   </figure>
 </div>

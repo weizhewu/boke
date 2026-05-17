@@ -24,9 +24,11 @@
 <figure class="project-shot">
   <img
     src="{{ $src }}"
+    data-full-src="{{ $src }}"
     alt="{{ .Text }}"
     loading="lazy"
     decoding="async"
+    sizes="(max-width: 768px) 100vw, (max-width: 1100px) 33vw, 280px"
     class="project-shot__img">
 </figure>
 {{- else -}}
