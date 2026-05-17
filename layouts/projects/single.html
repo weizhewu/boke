@@ -31,4 +31,8 @@
     <p class="project-lightbox__caption"></p>
   </div>
 </article>
+{{- with resources.Get "js/project-lightbox.js" -}}
+{{- $js := . | resources.Minify | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end -}}
 {{- end }}
